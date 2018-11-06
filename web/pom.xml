@@ -42,7 +42,7 @@
         <configuration>
           <fork>true</fork>
           <skip>false</skip>
-          <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+          <jvmArguments>-Dfile.encoding=UTF8</jvmArguments>
         </configuration>
       </plugin>
     </plugins>
