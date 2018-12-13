@@ -84,4 +84,6 @@ public interface UserMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(User record);
+
+    int batchInsert(List<User> t) ;
 }

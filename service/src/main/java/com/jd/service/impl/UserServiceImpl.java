@@ -10,6 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Description：
  *
@@ -32,9 +35,12 @@ public class UserServiceImpl implements UserService {
         logger.error("zzzzzzzzzzzzzzzzzzzzzzz");
         User u = new User() ;
         //u.setId(1L);
-        u.setUsername("abc");
-        u.setPassword("中华人民");
-        userMapper.insert(u);
+        u.setUsername("zzyzzy");
+        u.setPassword("中华人民111");
+        List<User> li = new ArrayList<>();
+        li.add(u);
+        li.add(u);
+        userMapper.batchInsert(li);
         logger.error("zzzzzzzzzzzzzzzzzzzzzzz");
     }
 }
